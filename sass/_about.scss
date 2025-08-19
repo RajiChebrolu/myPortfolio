@@ -1,0 +1,179 @@
+#about {
+  padding: 80px 0;
+  color: #ababab;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-col-1 {
+    flex-basis: 35%;
+
+    img {
+      width: 100%;
+      border-radius: 500px;
+    }
+  }
+
+  .about-col-2 {
+    flex-basis: 60%;
+  }
+
+  .tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+
+    .tab-links {
+      margin-right: 50px;
+      font-size: $font-small;
+      font-weight: 500;
+      cursor: pointer;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        background: $color-secondary;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+      }
+
+      &.active-link::after {
+        width: 50%;
+      }
+    }
+  }
+
+  .tab-contents {
+    display: none;
+
+    &.active-tab {
+      display: block;
+    }
+
+    ul {
+      li {
+        list-style: none;
+        margin: 10px 0;
+
+        span {
+          color: $color-secondary;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid $color-secondary;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: $color-light;
+    transition: background 0.5s;
+
+    &:hover {
+      background: $color-secondary;
+    }
+  }
+
+  .skill-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 0;
+
+    .skill-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: $font-xx-small;
+
+      ul {
+        padding-left: 0;
+        list-style: none;
+
+        li {
+          position: relative;
+          margin-bottom: 5px;
+          font-size: $font-xx-small;
+          padding-left: $padding-medium;
+
+          &::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: $color-secondary;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .progress-column {
+      flex: 0 0 100px;
+      flex-basis: 65%;
+
+      .percent {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin: 20px 0;
+        display: inline-block;
+
+        svg {
+          width: 100%;
+          height: 100%;
+          transform: rotate(-90deg);
+
+          circle {
+            fill: none;
+            stroke-width: 10;
+            stroke-dasharray: 440;
+
+            &.background {
+              stroke: #f3f3f3;
+            }
+
+            &.foreground {
+              stroke: $color-secondary;
+              stroke-dashoffset: 440;
+              transition: stroke-dashoffset 1s ease;
+            }
+          }
+        }
+        .number {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #333;
+
+          span {
+            &:nth-child(1) {
+              font-size: $font-medium;
+            }
+
+            &:nth-child(2) {
+              font-size: $font-x-small;
+            }
+          }
+        }
+      }
+    }
+  }
+}

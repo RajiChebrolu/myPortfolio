@@ -1,0 +1,136 @@
+@import "./mixins";
+
+nav {
+  .fas {
+    display: none;
+  }
+  @include respond-to(xs) {
+    .fas {
+      display: block;
+      font-size: 25px;
+    }
+
+    ul {
+      background: $color-secondary;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.5s;
+
+      li {
+        display: block;
+        margin: 25px;
+      }
+
+      .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.header-text {
+  @include respond-to(xs) {
+    margin-top: 5%;
+    font-size: $font-xx-small;
+
+    h1 {
+      font-size: $font-medium;
+    }
+  }
+}
+
+.sub-title {
+  @include respond-to(xs) {
+    font-size: $font-large;
+  }
+}
+
+.about-col-1,
+.about-col-2 {
+  @include respond-to(xs) {
+    flex-basis: 100%;
+  }
+}
+
+.about-col-1 {
+  @include respond-to(sm) {
+    margin-bottom: 30px;
+  }
+}
+
+.about-col-2 {
+  @include respond-to(sm) {
+    font-size: 14px;
+  }
+}
+
+.tab-links {
+  @include respond-to(xs) {
+    font-size: $font-xx-small;
+    margin-right: 20px;
+  }
+}
+
+.contact-left,
+.contact-right {
+  @include respond-to(xs) {
+    flex-basis: 100%;
+    gap: 80px;
+  }
+  @include respond-to(sm) {
+    flex-basis: 100%;
+    gap: 50px;
+  }
+}
+
+.copyright {
+  @include respond-to(xs) {
+    font-size: 14px;
+  }
+}
+
+.work-list {
+  @include respond-to(xs) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  @include respond-to(sm) {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(350px, 1fr));
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  @include respond-to(md) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    gap: 50px;
+    margin-top: 50px;
+  }
+}
+
+.work {
+  @include respond-to(xs) {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

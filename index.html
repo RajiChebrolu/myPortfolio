@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio (Raji)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!------------------------Header------------------------->
+    <header class="header">
+      <div class="container">
+        <nav class="header-name">
+          <h1>Rajyalakshmi Chebrolu</h1>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+          <ul id="sidemenu">            
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>Full Stack Developer</h1>
+          <h1>I am <span>Raji</span> from Aotearoa (NZ)</h1>
+        </div>
+      </div>
+    </header>
+    <!------------------------About------------------------->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/MyPicture.jpg" />
+          </div>
+          <div class="about-col-2">
+            <article>
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                I am a motivated and detail-oriented Full Stack Developer with a
+                strong interest in building dynamic, user-friendly web
+                applications. My technical foundation includes hands-on experience
+                with both front-end and back-end technologies. I’ve developed
+                several personal and academic projects that have helped me
+                understand the full development lifecycle from designing
+                responsive interfaces to implementing robust server-side logic.
+                I’m always eager to expand my skill set.
+              </p>
+            </article>
+            
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Backend Development</span>
+                  <div class="skill-row">
+                    <div class="skill-column">
+                      <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Laravel (Basic)</li>
+                        <li>PHP</li>
+                        <li>C#</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>                      
+                      </ul>
+                    </div>
+                  <!--<div class="progress-column">
+                    <div class="percent" id="percent1">
+                      <svg viewBox="0 0 150 150">
+                        <circle class="background" cx="75" cy="75" r="70" />
+                        <circle
+                          id="circle1"
+                          class="foreground"
+                          cx="75"
+                          cy="75"
+                          r="70"
+                        />
+                      </svg>
+                      <div class="number">
+                        <h3>
+                          <span class="value" id="value1">0</span><span>%</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>-->
+                </li>
+                <li>
+                  <span>CMS Development</span>
+                  <div class="skill-row">
+                    <div class="skill-column">
+                      <ul>
+                        <li>WordPress (Elementor, WP Forms)</li>                                              
+                      </ul>
+                    </div>                  
+                </li>
+                <li>
+                  <span>Tools & Platforms</span>
+                  <div class="skill-row">
+                    <div class="skill-column">
+                      <ul>
+                        <li>Git</li>
+                        <li>Visual Studio Code</li> 
+                        <li>Android Studio</li>                                             
+                      </ul>
+                    </div>                  
+                </li>
+                <li>
+                  <span>Mobile Development (Building Andriod/iOS Apps)</span>
+                  <div class="skill-row">
+                    <div class="skill-column">
+                      <ul>
+                        <li>React Native</li>                                              
+                      </ul>
+                    </div>
+                  <!--<div class="progress-column">
+                    <div class="percent" id="percent2">
+                      <svg viewBox="0 0 150 150">
+                        <circle class="background" cx="75" cy="75" r="70" />
+                        <circle
+                          id="circle2"
+                          class="foreground"
+                          cx="75"
+                          cy="75"
+                          r="70"
+                        />
+                      </svg>
+                      <div class="number">
+                        <h3>
+                          <span class="value" id="value2">0</span><span>%</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>-->
+                </li>
+                </li>
+                <li>
+                  <span>Frontend Development</span>
+                  <div class="skill-row">
+                    <div class="skill-column">
+                      <ul>
+                        <li>HTML</li> 
+                        <li>CSS</li> 
+                        <li>JavaScript</li> 
+                        <li>React</li> 
+                        <li>Saas</li> 
+                        <li>Bootstrap</li> 
+                        <li>UI/UX Design (Figma)</li>                                              
+                      </ul>
+                    </div>
+                  <!--<div class="progress-column">
+                    <div class="percent" id="percent3">
+                      <svg viewBox="0 0 150 150">
+                        <circle class="background" cx="75" cy="75" r="70" />
+                        <circle
+                          id="circle3"
+                          class="foreground"
+                          cx="75"
+                          cy="75"
+                          r="70"
+                        />
+                      </svg>
+                      <div class="number">
+                        <h3>
+                          <span class="value" id="value3">0</span><span>%</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>-->
+                </li>
+                </li>              
+                
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2025</span><br />Backend Development using C#, PHP,
+                  Python, Laravel, Django, MySQL, MongoDB
+                </li>
+                <li>
+                  <span>2024</span><br />Building Andriod/iOS Apps using React
+                  Native
+                </li>
+                <li>
+                  <span>2023</span><br />Web app Development using Frontend
+                  technologies
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2025</span><br />Bachelor of Applied Information Technology from Whitecliffe School of
+                  Information Technology
+                </li>
+                <li>
+                  <span>2024</span><br />Diploma in Software Development,
+                  Whitecliffe School of Information Technology
+                </li>
+                <li>
+                  <span>2023</span><br />Diploma in Web Development, Whitecliffe
+                  School of Information Technology
+                </li>
+                <li>
+                  <span>2022</span><br />Certificate in IT, Whitecliffe
+                  School of Information Technology
+                </li>
+                <li>
+                  <span>2007</span><br />Bachelor of Technology in Electronics &
+                  Communications, JNTU, India
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------Projects------------------------->
+    <section id="projects" >
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list"> 
+            <div class="work col-md-12">
+              <img src="images/project7.png" />
+            <div class="layer">
+              <h3>Bank Account Management Application</h3>
+              <p>
+                This is a multi-account banking system to support deposit, withdrawal, and interest operations for both customers and bank staff. 
+              </p>
+              <a href="#"><i class=""></i>C#</a>
+            </div>
+            </div> 
+            <div class="work col-md-12">
+              <img src="images/project8.png" />
+            <div class="layer">
+              <h3>Web Architecture and CMS Website</h3>
+              <p>
+                Developed a CMS-driven website for Auckland personal trainer Mike Watts using WordPress with Elementor for visual page building and MySQL for dynamic content storage.
+              </p>
+              <a href="#"><i class="fa-brands fa-wordpress"></i>WordPress</a>
+            </div>
+            </div>
+            <div class="work col-md-12">
+              <img src="images/project9.png" />
+            <div class="layer">
+              <h3>Movies App</h3>
+              <p>
+                This is a multi-page movie browsing and booking application using React.js, featuring dynamic routing, API integration, and responsive UI components.
+              </p>
+              <a href="#"><i class="fa-brands fa-react"></i>ReactJS</a>
+            </div>
+            </div>        
+            <div class="work col-md-12">
+              <img src="images/project1.png" />
+            <div class="layer">
+              <h3>Ongaonga B&B App</h3>
+              <p>
+                This is Ongaonga Bed & Breakfast web application, which explains the application requirements and reviewing the feasibility studies. 
+              </p>
+              <a href="#"><i class="fa-brands fa-html5"></i><i class="fab fa-php"></i><i class="fa-solid fa-database"></i></a>
+            </div>
+            </div>
+          
+          
+            <div class="work col-md-12">
+              <img src="images/project2.png" />
+            <div class="layer">
+              <h3>Aotearoa Cinemas App</h3>
+              <p>
+                This is a movie app where users can go and look up the various movies playing in the theatres, their details, and links to other related resources.
+              </p>
+              <a href="#"><i class="fa-brands fa-python"></i>Django</a>
+            </div>
+            </div>
+          
+          <div class="work col-md-12">
+            <img src="images/project3.png" />            
+            <div class="layer">
+              <h3>Go NZ Travel App</h3>
+              <p>
+                This is a Go NZ Travel App to serach for places all over the New Zealand to visit the awesome places and can hire a guide and places to stay.
+              </p>
+              <a href="#"><i class="fa-brands fa-python"></i>Django</a>
+            </div>
+          </div>
+          <div class="work col-md-12">
+            <img src="images/project4.png" />
+            <div class="layer">
+              <h3>Country&Capitals Quiz Mobile App</h3>
+              <p>
+                Quiz app, which allows users to play quiz about guessing capitals of different countries in Oceania continent. It has questions and options to choose the correct answer and get the result at the end.
+              </p>
+              <a href="docs/CountriesQuiz-20220728.docx"><i class="fa-brands fa-react"></i></a>
+            </div>
+          </div>
+          <div class="work col-md-12">
+            <img src="images/project5.png" />
+            <div class="layer">
+              <h3>LaMonijor Bakery App</h3>
+              <p>
+                LA Monijor Bakery is our client, aims to address the challenges faced by local bakeries in managing orders, inventory, and customer interactions. They have their presence in the town of La Falda, central Argentina. 
+              </p>
+              <a href="https://la-monijor.netlify.app/"><i class="fab fa-js"></i><i class="fa-brands fa-react"></i><i class="fa-solid fa-database"></i></a>
+            </div>
+          </div>
+          <div class="work col-md-12">
+            <img src="images/project6.png" />
+            <div class="layer">
+              <h3>NZ Fitness App</h3>
+              <p>
+                NZ Fitness app is to help with physical exercises and training, nutrition, and diet to get fit. Also, provides a healthier lifestyle by tracking users food intake, water intake and routine workout pattern.
+              </p>
+              <a href="docs/FitnessApp.docx"><i class="fa-brands fa-html5"></i><i class="fab fa-js"><i class="fa-brands fa-react"></i></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://la-monijor.netlify.app/" class="btn">See More</a>
+      </div>
+    </section>    
+    <!-------------------------Contact------------------->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>raji.chebrolu@com</p>
+            <p><i class="fas fa-phone-square-alt"></i>0211547237</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://github.com/RajiChebrolu/whitecliffe-AdvancedProgrammingLabs-RajiChebrolu/"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="https://linkedin.com/in/rajyalakshmi-chebrolu-00899b23a"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="docs/Rajyalakshmi.docx" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>      
+    </section>
+    <!----------------Footer---------------------->
+    <section id="footer">
+      <div class="copyright">
+        <p>
+          <i class="fas fa-heart"> </i> Copyright © Raji Portfolio. </i>All rights reserved @2025 <i class="fas fa-heart"></i>
+        </p>
+      </div>
+    </section>
+    
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"> </script>
+    
+  </body>
+</html>

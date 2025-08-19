@@ -1,0 +1,42 @@
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./about";
+@import "./projects";
+@import "./contact";
+@import "./footer";
+@import "./responsive";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $color-primary;
+  color: $color-light;
+}
+.container {
+  padding: $padding-small 10%;
+
+  h1 {
+    font-size: $font-large;
+  }
+}
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: $color-light;
+}
+.text {
+  font-size: $font-xx-small;
+  text-align: justify;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-top: 20px;
+  margin: 20px;
+}

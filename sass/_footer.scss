@@ -1,0 +1,14 @@
+//Footer
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: $padding-medium 0;
+  background: $color-active;
+  font-weight: 300;
+  margin-top: 80px;
+
+  i {
+    color: $color-secondary;
+  }
+}

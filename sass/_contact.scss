@@ -1,0 +1,70 @@
+//Contact
+
+.contact-left {
+  flex-basis: 35%;
+
+  p {
+    margin-top: 30px;
+
+    i {
+      color: $color-secondary;
+      margin-right: 15px;
+      font-size: 25px;
+    }
+  }
+}
+
+.contact-right {
+  flex-basis: 60%;
+
+  form {
+    width: 100%;
+
+    input,
+    textarea {
+      width: 100%;
+      border: 0;
+      outline: none;
+      background: $color-active;
+      padding: 15px;
+      margin: 15px 0;
+      color: $color-light;
+      font-size: $font-x-small;
+      border-radius: 6px;
+    }
+  }
+}
+
+.social-icons {
+  margin-top: 30px;
+
+  a {
+    text-decoration: none;
+    font-size: $font-large;
+    margin-right: 15px;
+    color: $color-secondary;
+    display: inline-block;
+    transition: transform 0.5s;
+
+    &:hover {
+      color: $color-secondary;
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.btn2 {
+  display: inline-block;
+  background: $color-secondary;
+  padding: 14px $padding-large;
+  font-size: 18px;
+  margin-top: 25px;
+  cursor: pointer;
+  color: $color-light;
+}
+
+#msg {
+  color: $color-message;
+  margin-top: -40px;
+  display: block;
+}

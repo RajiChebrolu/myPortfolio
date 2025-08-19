@@ -1,0 +1,107 @@
+#projects {
+  padding: $font-medium 0;
+
+  .work-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    gap: 50px;
+    margin-top: 50px;
+
+    @include respond-to(xs) {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    @include respond-to(sm) {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(350px, 1fr));
+      gap: 50px;
+      margin-top: 50px;
+    }
+    @include respond-to(md) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(350px, 1fr));
+      gap: 50px;
+      margin-top: 50px;
+    }
+  }
+  .work {
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      height: 275px;
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+      transition: transform 0.5s;
+    }
+
+    .layer {
+      width: 100%;
+      height: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), $color-secondary);
+      border-radius: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 40px;
+      text-align: center;
+      font-size: 14px;
+      transition: height 0.5s;
+
+      h3 {
+        font-weight: 500;
+        margin-top: 10px;
+      }
+
+      p {
+        margin-top: 10px;
+      }
+
+      a {
+        margin-top: 5px;
+        color: $color-secondary;
+        text-decoration: none;
+        font-size: $font-x-small;
+        line-height: 60px;
+        background-color: $color-light;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+
+      .layer {
+        height: 100%;
+      }
+    }
+  }
+}
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid $color-secondary;
+  padding: 14px $padding-large;
+  border-radius: 6px;
+  text-decoration: none;
+  color: $color-light;
+  transition: background 0.5s;
+
+  &:hover {
+    background: $color-secondary;
+  }
+}
