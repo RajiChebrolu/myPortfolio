@@ -310,6 +310,11 @@
   margin-right: 15px;
   font-size: 25px;
 }
+.contact-left a i {
+  color: #f07070;
+  margin-right: 15px;
+  font-size: 25px;
+}
 
 .contact-right {
   flex-basis: 60%;
@@ -543,4 +548,4 @@ body {
   max-width: 800px;
   margin-top: 20px;
   margin: 20px;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
