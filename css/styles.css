@@ -310,6 +310,11 @@
   margin-right: 15px;
   font-size: 25px;
 }
+.contact-left a i {
+  color: #f07070;
+  margin-right: 15px;
+  font-size: 25px;
+}
 
 .contact-right {
   flex-basis: 60%;
