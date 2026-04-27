@@ -549,3 +549,33 @@ body {
   margin-top: 20px;
   margin: 20px;
 } /*# sourceMappingURL=styles.css.map */
+
+#experience-section {
+  padding: 60px 0;
+}
+
+.experience-box {
+  margin-bottom: 40px;
+}
+
+.experience-box h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #f07070;
+}
+
+.experience-box h3 {
+  font-size: 18px;
+  color: #777;
+}
+
+.exp-duration {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.experience-box ul {
+  margin-left: 20px;
+  line-height: 1.6;
+}
